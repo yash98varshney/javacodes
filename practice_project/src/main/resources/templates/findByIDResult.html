@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="" th:href="@{/css/allpepCSS.css}">
+</head>
+<body>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Birth Date</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="customer: ${singleCustomer}">
+                    <td th:text="${singleCustomer.customer_id}" />
+                    <td th:text="${singleCustomer.first_name}" />
+                    <td th:text="${singleCustomer.last_name}" />
+                    <td th:text="${singleCustomer.birth_date}" />
+                    <td th:text="${singleCustomer.phone}" />
+                    <td th:text="${singleCustomer.address}" />
+                    <td th:text="${singleCustomer.city}" />
+                    <td th:text="${singleCustomer.state}" />
+                    <td th:text="${singleCustomer.points}" />
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

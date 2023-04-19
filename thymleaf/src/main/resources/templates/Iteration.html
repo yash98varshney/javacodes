@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns :th ="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 th:text="${names}"></h1>
+    <ul>
+        <li th:each = "n,status : ${names}">
+            <span th:text=" ${status.index+1} +' '+${n}"></span>
+        </li>
+    </ul>
+
+    <h1 th:text="${nameMap}"></h1>
+
+    
+    <table style="border: solid 1px black;">
+        <thead>
+            <tr>
+                <th>Roll No.</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="student: ${nameMap}">
+                <td th:text="${student.key}" />
+                <td th:text="${student.value}" />
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
