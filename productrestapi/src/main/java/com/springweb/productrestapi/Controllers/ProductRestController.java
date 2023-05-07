@@ -3,6 +3,7 @@ package com.springweb.productrestapi.Controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.springweb.productrestapi.Entities.products;
+import com.springweb.productrestapi.Exception.APIRequestException;
 import com.springweb.productrestapi.Repository.ProductRepository;
 
 @RestController
@@ -44,5 +46,10 @@ public class ProductRestController {
     @RequestMapping(value = "/products/{id}" , method = RequestMethod.DELETE)
     public void deleteProduct(@PathVariable("id") int id){
         repository.deleteById(id);
+    }
+
+    @GetMapping("/all")
+    public List<products> getNullproduct(){
+        throw new APIRequestException("Custome Exception displayed");
     }
 }

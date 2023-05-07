@@ -60,7 +60,7 @@ public class SomeBussinesMockAdvanceTest {
         String value=mock.get(0);
         String value2=mock.get(1);
 
-        //Verify
+        //Verify(verify(mock).functionundertest())  
 
         verify(mock).get(0);  // check whether mock.get is called with value 0 or not 
         verify(mock,times(2)).get(anyInt());   // verify mock.get() is called exactly 2 times

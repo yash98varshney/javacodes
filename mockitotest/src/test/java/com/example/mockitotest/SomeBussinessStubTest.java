@@ -38,3 +38,26 @@ public class SomeBussinessStubTest {
     }
 
 }
+
+
+/*
+ * 
+  @Override
+  public List<ItemEntity> getMenuforRes(String id){
+    List<ItemEntity> ans=(List<ItemEntity>) item.findById(id).get();
+    return ans;
+  }
+
+
+  @GetMapping(MENU_API)
+  public ResponseEntity<List<ItemEntity>> getmenuofRes(@RequestParam("restaurantID") String id ){
+    
+    List<ItemEntity> ans=restaurantService.getMenuforRes(id);
+    return ResponseEntity.ok().body(ans);
+  }
+
+    List<ItemEntity> getMenuforRes(String id);
+
+      @Autowired
+  ItemRepository item;
+ */
