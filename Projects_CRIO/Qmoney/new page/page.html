@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>New Page</title>
+</head><body>QMONEY :- <span style="font-size: 10pt"><br/>
+</span><span style="font-size: 10pt"><br/>
+<span style="font-family: Ubuntu"><span style="color: #000000">Stock Analyzer Tool for Portfolio Managers<br/>
+</span></span></span><span style="font-size: 10pt"><span style="font-family: Ubuntu"><span style="color: #000000">Annualized Returns and Absolute Returns</span></span></span><br/>
+<br/>
+<img src="image.png" width="550" height="350" /><br/>
+<br/>
+<br/>
+Concepts covered in QMONEY <br/>
+<b><span style="font-size: 11pt"><br/>
+</span></b><span style="font-size: 10pt"><span style="font-family: Ubuntu"><span style="color: #000000">JSON</span></span><br/>
+<span style="font-family: Ubuntu"><span style="color: #000000">Jackson</span></span><br/>
+<span style="font-family: Ubuntu"><span style="color: #000000">Consuming REST API </span></span><br/>
+<span style="font-family: Ubuntu"><span style="color: #000000">Gradle</span></span><br/>
+<span style="font-family: Ubuntu"><span style="color: #000000">Factory Pattern</span></span><br/>
+<span style="font-family: Ubuntu"><span style="color: #000000">Exception Handling</span></span><br/>
+</span><span style="font-size: 10pt"><span style="font-family: Ubuntu"><span style="color: #000000">Concurrency</span></span></span><span style="font-size: 11pt"><b><br/>
+</b></span><b><br/>
+</b>&nbsp; <br/>
+Features to be implemnted<br/>
+<br/>
+<span style="font-size: 10pt"><span style="font-family: Ubuntu"><span style="color: #212121">Read user portfolio file</span></span><br/>
+<span style="font-family: Ubuntu"><span style="color: #212121">Get stock quotes from a third-party provider</span></span><br/>
+<span style="font-family: Ubuntu"><span style="color: #212121">Implement logic to perform calculations</span></span><br/>
+<span style="font-family: Ubuntu"><span style="color: #212121">Create a portfolio management library</span></span><br/>
+<span style="font-family: Ubuntu"><span style="color: #212121">Publish the library<br/>
+</span></span><span style="font-family: Ubuntu"><span style="color: #212121">Add another service provider</span></span><br/>
+<span style="font-family: Ubuntu"><span style="color: #212121">Handle user issues</span></span><br/>
+<span style="font-family: Ubuntu"><span style="color: #212121">Enhance performance of the app</span></span><br/>
+<br/>
+<br/>
+Module 1:- <br/>
+<br/>
+we learned about JSON objectMapper class which used to parse the data from JSON to POJO and vice versa <br/>
+learned about annotations of Object Mapper <br/>
+<br/>
+</span><span style="font-size: 10pt">We have given a Json file Trades.json which contains stocks purchased by the user</span>&nbsp;<br/>
+File includes :- <br/>
+&nbsp;&#09;Symbol :- company name <br/>
+&nbsp;&#09;Quantity <br/>
+&nbsp;&#09;Trade Type:- buy/sell<br/>
+&nbsp;&#09;Purchased Date <br/>
+<br/>
+All the buiseness logic is written in PortfollioManager Application.java class <br/>
+<br/>
+We have to write mainReadFiles method which Deserialize the data from JSON to POJO PortFoliTrades.java and extracts all the Symbols from the data and return them as list . <br/>
+<br/>
+<img src="image 2.png" width="450" height="250" /><br/>
+<br/>
+Module 2:- <br/>
+<br/>
+Learned about Comperable and comperator interface <br/>
+Learn about HTTP and it's responses<br/>
+Learn about REST API and REST TEMPLATE <br/>
+<br/>
+<img src="image 3.png" width="632" height="250" /><br/>
+Working on second part of the problem Means Now we have Symbols from the user portfolio , we have to get the closing price of each trade and arrange them in acending order . <br/>
+<br/>
+Created readTradesFromJason() function which will give List of trades pojo <br/>
+End date is given by the program as argument during program run <br/>
+We have to get token function which will return String which is a token for Tingo <br/>
+We have made a function called prepareUrl() which creates URL that we required to pass in RestTemplate <br/>
+So for Trade we have enddate , symbol , token <br/>
+<br/>
+Than for every Symbol we call TINGO API and get the closing price from there on the particular end date using RestTemplate <br/>
+We get TingoCandle Array <br/>
+We have another POJO with us TotalReturnDto which contains symbol and closing price <br/>
+At the end we sort all the elements on the basis of closing price and return the list.<br/>
+<br/>
+<img src="image 4.png" width="685" height="500" /><br/>
+<br/>
+&nbsp;<br/>
+<br/>
+Module 3:- <br/>
+<br/>
+Learned about JUNIT testing <br/>
+In this module we have to calculate the Annualized return for all the stocks and return in decending order <br/>
+<br/>
+we have written 4 functions <br/>
+1. getOpeningPriceOnStartDate<br/>
+2. getClosingPriceOnEndDate <br/>
+3.mainCalculateSingleReturn<br/>
+4. calculateAnnualizedReturns<br/>
+<br/>
+1. In this function List&lt;Candles&gt; is passed as argument and which we have fetched from Tiingo API and passed here we take first term from list as it's the starting price and call getOpen() method of Candle class which is further implemented in TiingoCandle.java class .<br/>
+<br/>
+<img src="image 5.png" /><br/>
+<br/>
+2. In this function List&lt;Candles&gt; is passed as argument and which we have fetched from Tiingo API and passed here we take last element as it's the price of stock on final day and call getClose() method of Candle class which is further implemented in TiingoCandle.java class .<br/>
+<br/>
+<img src="image 6.png" /><br/>
+<br/>
+We need both these data to calculate the Annualized return of each staock <br/>
+<br/>
+4. This function is used to Calculate annualized &nbsp;return for any stock which is passed ,endate , portfolioTrade Object ,buyPrice(startPrice) ,sellPrice(endPrice) are passed whichare used to calucate annualized return <br/>
+Formula we used to calculate annualized return :- (1+total_returns) ^ (1/total_num_years) -1 <br/>
+<br/>
+<img src="image 7.png" /><br/>
+<br/>
+<br/>
+3. In this function we will get String args as input parameter <br/>
+<br/>
+So we use args[0] &nbsp;to get the List&lt;PortfolioTrade&gt; trades using readTradesFromJson <br/>
+endDate is passed as args[1]<br/>
+We convert the end date to LocalDate format <br/>
+And make List&lt;Annualizedreturn&gt; to &nbsp;return as ans of this function <br/>
+Now for each PortfolioTrade we have to calculate annualized return and store it in a list and return this list at the end uses all the functions we have made above to calculate and make list .<br/>
+We use comparator to arrange the annualized return in decending order <br/>
+<br/>
+<img src="image 8.png" width="600" height="535" /><br/>
+<br/>
+</body></html>

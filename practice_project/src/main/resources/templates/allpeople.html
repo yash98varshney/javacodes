@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllCustomers🧔‍♂️</title>
+    <link rel="stylesheet" href="" th:href="@{/css/allpepCSS.css}">
+</head>
+<body>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Birth Date</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="customer: ${allpeplist}">
+                    <td th:text="${customer.customer_id}" />
+                    <td th:text="${customer.first_name}" />
+                    <td th:text="${customer.last_name}" />
+                    <td th:text="${customer.birth_date}" />
+                    <td th:text="${customer.phone}" />
+                    <td th:text="${customer.address}" />
+                    <td th:text="${customer.city}" />
+                    <td th:text="${customer.state}" />
+                    <td th:text="${customer.points}" />
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

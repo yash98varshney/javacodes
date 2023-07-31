@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns :th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontPage😁</title>
+    <link rel="stylesheet" th:href="@{/css/Mainpagebutton.css}">
+</head>
+<body>
+    <div class="button-container">
+        <form th:action="@{/allCustomers/}"  style="width:100%">
+            <button class="button-17" role="button">All Customers</button>
+        </form>
+
+
+        <form th:action="@{/findbyID/}"  style="width:100%">
+            <button class="button-17" role="button">Find By ID </button>
+            
+        </form>
+
+
+        <form th:action="@{/addCustomer/}" style="width: 100%;">
+            <button class="button-17" role="button">Add Customers</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
