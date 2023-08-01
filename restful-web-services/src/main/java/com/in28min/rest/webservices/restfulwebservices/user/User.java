@@ -2,9 +2,15 @@ package com.in28min.rest.webservices.restfulwebservices.user;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.Size;
+
 public class User {
+	
 	private Integer id;
+	@Size(min=2 , message="Name should have 2 chacters atleast")
 	private String name;
+	@Past(message="bithdate should be in past")
 	private LocalDate birthdate;
 	
 	public User(Integer id, String name, LocalDate birthdate) {
