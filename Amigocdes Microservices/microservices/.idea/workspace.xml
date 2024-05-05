@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e0a38395-660d-4b2a-b3a3-84f6c1475aa5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../customer/customer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../customer/customer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../customer/customer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../customer/customer/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../customer/customer/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../customer/customer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../customer/customer/src/main/java/com/amigocodes/course/customer/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../customer/customer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../customer/customer/src/test/java/com/amigocodes/course/customer/ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/auth/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/auth/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/auth/UserConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/entities/RefreshToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/entities/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/entities/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/model/AuthRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/model/JwtResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/model/RefreshTokenRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/model/UserInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/repository/RefreshTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/service/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/service/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/service/RefreshTokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../expensetracker/src/main/java/com/learning/expensetracker/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitmq/.idea/rabbitmq.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq/src/main/java/com/rabbitmq/javaguides/youtube/rabbitmq/config/RabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq/src/main/java/com/rabbitmq/javaguides/youtube/rabbitmq/consumer/RabbitMqConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq/src/main/java/com/rabbitmq/javaguides/youtube/rabbitmq/controllers/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rabbitmq/rabbitmq/src/main/java/com/rabbitmq/javaguides/youtube/rabbitmq/publisher/RabbitMqProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursion/Permutation_of_String.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Recursion/Permutation_of_String.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../in28minMicroservicePractice/CentralizedConfigFolderForMicroServices" beforeDir="false" afterPath="$PROJECT_DIR$/../../in28minMicroservicePractice/CentralizedConfigFolderForMicroServices" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../in28minMicroservicePractice/CentralizedConfigFolderForMicroServices/limits-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../in28minMicroservicePractice/CentralizedConfigFolderForMicroServices/limits-service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../in28minMicroservicePractice/limits-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../in28minMicroservicePractice/limits-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice_project/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice_project/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2f2h5Mv60zCqO1bUVAPJugWGf3B" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.CustomerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FraudApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NotificationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.customer [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices [validate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17 (2)&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/javacodes/rabbitmq&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.amigocodes.fraud" />
+      <recent name="com.amigocodes.customer" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.amigocodes.clients.fraud" />
+      <recent name="com.amigocodes.customer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.NotificationApplication">
+    <configuration name="CustomerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.amigocodes.customer.CustomerApplication" />
+      <module name="customer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amigocodes.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.amigocodes.eurekaserver.EurekaServerApplication" />
+      <module name="eureka-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amigocodes.eurekaserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FraudApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.amigocodes.fraud.FraudApplication" />
+      <module name="fraud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amigocodes.fraud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.amigocodes.notification.NotificationApplication" />
+      <module name="notification" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amigocodes.notification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NotificationApplication" />
+        <item itemvalue="Application.CustomerApplication" />
+        <item itemvalue="Application.FraudApplication" />
+        <item itemvalue="Application.EurekaServerApplication" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0a38395-660d-4b2a-b3a3-84f6c1475aa5" name="Changes" comment="" />
+      <created>1713004897964</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713004897964</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
